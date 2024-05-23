@@ -12,7 +12,7 @@ public class Main {
         pedido.calcularTotal();
         pedido.reiniciarEstado();
 
-        Cliente cliente = new Cliente(1, "Juan", "Calle 123", "123456789", "juan@example.com", 30);
+        Cliente cliente = new Cliente(1, "Joel", "Calle 143", "123456789", "joel@example.com", 30);
 
         cliente.agregarPedido(new Pedido(25, new Date(), 10.5, "Prueba"));
         cliente.eliminarPedido(new Pedido(25, new Date(), 10.5, "Prueba"));
