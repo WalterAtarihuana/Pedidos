@@ -21,6 +21,7 @@ public class Cliente {
         this.nombre = "Agregando";
             System.out.println("El pedido ha sido agregado para el cliente");
         }
+
         public void eliminarPedido(Pedido pedido){
         this.nombre = "Eliminando";
             System.out.println("El pedido ha sido eliminado para el cliente");
