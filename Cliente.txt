@@ -18,31 +18,31 @@ public class Cliente {
     }
 
         public void agregarPedido(Pedido pedido) {
-            this.nombre = "Agregado";
+        this.nombre = "Agregando";
             System.out.println("El pedido ha sido agregado para el cliente");
         }
         public void eliminarPedido(Pedido pedido){
-            this.nombre = "Eliminado";
+        this.nombre = "Eliminando";
             System.out.println("El pedido ha sido eliminado para el cliente");
 
         }
 
         public void actualizarDatos(){
-        this.nombre = "Actualizado";
+        this.nombre = "Actualizando";
             System.out.println("Los datos del cliente han sido actualizados");
         }
 
         public void verHistorial(){
-        this.nombre = "Ver Historial";
+        this.nombre = "Historial";
             System.out.println("Historial del cliente");
         }
 
     public int getIdCliente() {
         return idCliente;
     }
-    
+
     public String toString() {
-        return "Cliente{idCliente=" + this.idCliente + ", nombre='" + this.nombre + "', direccion='" + this.direccion + "', telefono='" + this.telefono + "', correo='" + this.correo + "', edad=" + this.edad + "}";
+        return "Cliente{idCliente=" + this.idCliente + ", nombre=" + this.nombre + ", direccion=" + this.direccion + ", telefono=" + this.telefono + ", correo=" + this.correo + ", edad=" + this.edad + "}";
     }
 
     public void setIdCliente(int idCliente) {
