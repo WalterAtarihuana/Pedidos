@@ -5,7 +5,6 @@ import java.util.Date;
 public class Main {
     public Main() {
     }
-
     public static void main(String[] args) {
         Pedido pedido = new Pedido(25, new Date(), 10.5, "Prueba");
         pedido.solicitar();
@@ -13,7 +12,11 @@ public class Main {
         pedido.calcularTotal();
         pedido.reiniciarEstado();
 
-        Cliente cliente = new Cliente(1, "Juan", "Calle Principal 123", "123456789", "juan@example.com", 30);
+        Cliente cliente = new Cliente(1, "Juan", "Calle 123", "123456789", "juan@example.com", 30);
 
+        cliente.agregarPedido(new Pedido(25, new Date(), 10.5, "Prueba"));
+        cliente.eliminarPedido(new Pedido(25, new Date(), 10.5, "Prueba"));
+        cliente.actualizarDatos();
+        cliente.verHistorial();
     }
 }
